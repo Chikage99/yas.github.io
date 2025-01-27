@@ -7,28 +7,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="app">
-    <h1>キャラソート</h1>
-<div id="comparison">
-	<div id="left">
-  	<div class="image-wrapper">
-	<img src="images/character1.png" alt="キャラ1">
-	</div>
-	<span class="name"></span>
-	</div>
-
-	<div id="right">
-	<div class="image-wrapper">
-	<img src="images/character2.png" alt="キャラ2">
-	</div>
-	<span class="name"></span>
-	</div>
-</div>
-
-    <div id="results" style="display: none;">
-      <h2>ランキング結果</h2>
-      <ol id="ranking"></ol>
+  <div id="comparison">
+    <div id="progress">進行度: <span id="progress-percentage">0%</span></div>
+    <div id="characters">
+      <div id="left" class="character">
+        <img src="" alt="">
+        <div class="name"></div>
+      </div>
+      <div id="right" class="character">
+        <img src="" alt="">
+        <div class="name"></div>
+      </div>
     </div>
+  </div>
+  <div id="results" style="display: none;">
+    <h1>ランキング結果</h1>
+    <div id="pyramid-ranking"></div>
+    <ul id="text-ranking"></ul>
   </div>
   <script src="scripts.js"></script>
 </body>

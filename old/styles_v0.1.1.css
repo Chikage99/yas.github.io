@@ -1,0 +1,133 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#comparison {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.character img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* 選択ボタンを非表示にする */
+#left button,
+#right button {
+  display: none;
+}
+
+/* 左右に並べる親要素 */
+#comparison {
+  display: flex; /* 横並び */
+  align-items: center; /* 上下中央揃え */
+  width: 100%; /* 親要素が幅いっぱいに広がる */
+  gap: 20px; /* 画像同士の間隔を調整 (ここで狭くしたり広くしたり) */
+  margin-top: 20px; /* 上部のスペースを調整 */
+}
+
+/* 画像を表示する枠 */
+.image-wrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center; /* 水平方向に中央揃え */
+  align-items: center; /* 垂直方向に中央揃え */
+  overflow: hidden; /* 枠からはみ出さないようにする */
+  background-color: #f0f0f0; /* 枠の背景色 */
+  border-radius: 10px; /* 枠の角を丸くする場合 */
+}
+
+/* 画像のサイズ統一 */
+.image-wrapper img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* 画像が枠に収まるように調整 */
+}
+
+/* 名前のスタイル */
+.name {
+  margin-top: 10px; /* 画像と名前の間にスペースを作る */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#ranking {
+  padding: 20px;
+}
+
+.rank-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.rank-item {
+  text-align: center;
+}
+
+.rank-image {
+  width: 100px; /* デフォルトの画像サイズ */
+  height: 100px;
+}
+
+.rank-image.rank-1 {
+  width: 250px; /* 1位の画像 */
+  height: 250px;
+}
+
+.rank-image.rank-2,
+.rank-image.rank-3 {
+  width: 180px; /* 2位、3位の画像 */
+  height: 180px;
+}
+
+.rank-image.rank-4,
+.rank-image.rank-5,
+.rank-image.rank-6 {
+  width: 150px; /* 4位〜6位の画像 */
+  height: 150px;
+}
+
+.rank-image.rank-7,
+.rank-image.rank-8,
+.rank-image.rank-9,
+.rank-image.rank-10 {
+  width: 100px; /* 7位〜10位の画像 */
+  height: 100px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
